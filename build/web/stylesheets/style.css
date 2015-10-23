@@ -1,0 +1,381 @@
+@import url('http://fonts.googleapis.com/css?family=Montserrat');
+@import url('http://fonts.googleapis.com/css?family=Raleway');
+body{
+	background-color: #EEEEEE;
+	font-family: 'Raleway';
+	display: block;
+	/*width:100%;
+	height:100%;*/
+}
+a:link, a:visited{
+	color: #EEEEEE;
+	display: inline-block;
+	text-decoration: none;
+	margin: 0px;
+}
+.header{
+	background-image: url(../images/image1.jpg);
+	/*background-color: #B71C1C;*/
+	height: 95vh;
+	min-height:95%;
+	width: 100%;
+	/*overflow: hidden;*/
+	/*background:
+	  linear-gradient(
+	    rgba(183, 28, 28, 0.50),
+	    rgba(183, 28, 28, 0.50)
+	  ),
+	  url(../images/image1.jpg);*/
+}
+.logo{
+	/*background-image: url(/images/beavent_blanco_360.png);*/
+	color: rgba(238, 238, 238, 0.9);
+	height: 200px;
+	width: 100%;
+	font-size: 4em;
+	text-align: center;
+
+}
+.fa-5x{
+
+}
+.slogan{
+	margin-left: 30%;
+	/*border-bottom: 5px solid #EEEEEE;*/
+	padding-bottom: 10px;
+	padding-top: 30px;
+	width: 40%;
+	text-align: center;
+	font-family: Montserrat;
+
+}
+.login{
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	padding-right: 15px;
+	color: #EEEEEE;
+}
+.name{
+	color: rgba(238, 238, 238, 0.9);
+	font-size: 5em;
+	margin-bottom: 0px;
+	text-align: center;
+}
+.information{
+	color: rgba(238, 238, 238, 0.9);
+	margin-left: 30%;
+	padding-top: 10px;
+	text-align: center;
+	width: 40%;
+}
+.scrolldown{
+	color: rgba(238, 238, 238, 0.9);
+	text-align: center;
+	width: 5%;
+	padding-top: 5%;
+	margin-left: 47.5%;	
+	position: relative;
+	bottom: 1px;
+}
+.popup-login{
+	position: absolute;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	min-height:100%;
+	z-index: 999;
+}
+.blur-filter{
+	-webkit-filter: blur(5px);
+}
+.background-login{
+	background-color: rgba(33, 33, 33, 0.7);
+	width: 100%;
+	height: 100%;
+
+}
+.close-popup{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 0;
+	right: 0;
+	padding-right: 5px;
+	color: rgba(238, 238, 238, 0.9);
+}
+.form-login{
+	width: 40%;
+	text-align:center;
+	margin-left: 30%;
+	z-index: 999;
+	color: #EEEEEE;
+	font-family: Raleway;
+	padding-top: 5%;
+	/*margin-bottom: 20%;*/
+
+}
+.form-login p{
+	display: inline-block;
+	margin-right: 10px;
+}
+.form-login h2{
+	margin: 0.2em;
+	padding-top: 5px;
+}
+.form-login a:hover{
+	color: rgba(183, 28, 28, 1);
+}
+.login-facebook{
+	background: rgba(48, 63, 159, 0.9);
+	border: 2px solid rgba(48, 63, 159, 0.9);
+	color: #EEEEEE;
+	height: 40px;
+	width: 70%;
+	margin-left:14%;
+	margin-top: 10px;
+
+}
+.login-facebook:hover{
+	background: #303F9F;
+	border: 2px solid #303F9F;
+	color: #EEEEEE;
+	height: 40px;
+	width: 70%;
+	margin-left:14%;
+	margin-top: 10px;
+
+}
+.login-facebook h4{
+	display: inline-block;
+	margin: 0px;
+	padding: 10px;
+}
+.login-twitch{
+	background: rgba(81, 45, 168, 0.9);
+	border: 2px solid rgba(81, 45, 168, 0.9);
+	color: #EEEEEE;
+	height: 40px;
+	width: 70%;
+	margin-left: 14%;
+	margin-top: 10px;
+	margin-bottom: 30px;
+
+}
+.login-twitch:hover{
+	background: #512DA8;
+	border: 2px solid #512DA8;
+	color: #EEEEEE;
+	height: 40px;
+	width: 70%;
+	margin-left: 14%;
+	margin-top: 10px;
+}
+.login-twitch h4{
+	display: inline-block;
+	margin: 0px;
+	padding: 10px;
+}
+.username-login{
+	background: transparent;
+	border: 2px solid rgba(238, 238, 238, 0.6);
+	color: rgba(238, 238, 238, 0.6);
+	height: 40px;
+	width: 70%;
+	margin-top: 10px;
+	padding:0px;
+	text-align: center;
+
+}
+.username-login:hover{
+	background: transparent;
+	border: 2px solid #FAFAFA;
+	color: rgba(238, 238, 238, 0.9);
+	text-align: center;
+
+}
+.username-login::placeholder{
+	color: rgba(238, 238, 238, 0.6);
+	text-align: center;
+	border: 2px solid #EEEEEE;
+	border-radius: 2px;
+	margin: 10px;
+}
+.username-login::-webkit-input-placeholder{
+	color: rgba(238, 238, 238, 0.6);
+}
+.username-login::-webkit-input-placeholder {
+   color: rgba(238, 238, 238, 0.6);
+   position:relative;
+   padding-left:0;
+    -webkit-transition: padding 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: padding 0.5s;
+}
+.password-login{
+	background: transparent;
+	border: 2px solid rgba(238, 238, 238, 0.6);
+	color: rgba(238, 238, 238, 0.6);
+	height: 40px;
+	width: 70%;
+	margin-top: 10px;
+	padding-left:0px;
+	text-align: center;
+}
+.password-login::placeholder{
+	color: rgba(238, 238, 238, 0.6);
+	text-align: center;
+	border: 2px solid  rgba(238, 238, 238, 0.6);;
+	border-radius: 2px;
+	margin: 10px;
+}
+.password-login::-webkit-input-placeholder{
+	color: rgba(238, 238, 238, 0.9);
+}
+.password-login::-webkit-input-placeholder {
+   color: rgba(238, 238, 238, 0.6);
+   position:relative;
+   padding-left:0;
+    -webkit-transition: padding 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: padding 0.5s;
+}
+.password-login:hover{
+	background: transparent;
+	border: 2px solid #FAFAFA;
+	color: rgba(238, 238, 238, 0.9);
+	text-align: center;
+
+}
+.button-login{
+	background: rgba(183, 28, 28, 0.9);
+	border: none;
+	color: #EEEEEE;
+	height: 40px;
+	width: 70%;
+	margin-top: 10px;
+	padding-left:0px;
+	text-align: center;
+	font-family: Montserrat;
+}
+.button-login:hover{
+	background: rgba(183, 28, 28, 1);
+}
+.information2{
+	height: 90vh;
+	background: #D7CCC8;
+}
+.information2 .communities h2{
+	color: #212121;
+	text-align: center;
+	margin-top:0px;
+	padding-top: 5%;
+}
+
+
+
+.game-image1{
+	margin-top: 100px;
+	height: 25vh;
+	width:30vw;
+	background: url(../images/lol-logogray.png) no-repeat;
+	background-size: 100%, 100%;
+}
+.game-image1:hover{
+	margin-top: 100px;
+	height: 25vh;
+	width: 30vw;
+	background: url(../images/lol-logo.png) no-repeat;
+	background-size: 100%, 100%;
+}
+.game-name1{
+	background: #212121;
+	color: #EEEEEE;
+	position: relative;
+	top: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 300px;
+	text-align: center;
+	border-radius: 100px;
+	margin-left:20%;
+}
+.game-name1 h3{
+	margin: 0px;
+}
+.game-name2{
+	background: #212121;
+	color: #EEEEEE;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 300px;
+	text-align: center;
+	border-radius: 100px;
+	margin-left:20%;
+}
+.game-name2 h3{
+	margin: 0px;
+}
+.game-name3{
+	background: #212121;
+	color: #EEEEEE;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 300px;
+	text-align: center;
+	border-radius: 100px;
+	margin-left:20%;
+}
+.game-name3 h3{
+	margin: 0px;
+}
+.information3{
+	height: 90vh;
+	background: #B71C1C;
+
+}
+.game-image2{
+	margin-top: 100px;
+	margin-left: 40%;
+	height: 150px;
+	width: 150px;
+	display: block;
+	background: url(../images/dota2-logogray.png) no-repeat;
+	background-size: 100%, 100%;
+	margin-bottom: 50px;
+}
+.game-image2:hover{
+	margin-top: 100px;
+	margin-left: 40%;
+	height: 150px;
+	width:150px;
+	background: url(../images/dota2-logo.png) no-repeat;
+	background-size: 100%, 100%;
+	margin-bottom: 50px;
+	visibility: visible;
+}
+.information4{
+	height: 90vh;
+	background: #D7CCC8;
+}
+.game-image3{
+	margin-top: 100px;
+	margin-left:20%;
+	height: 200px;
+	width:300px;
+	background: url(../images/heroes-logogray.png) no-repeat;
+	background-size: 100%, 100%;
+}
+.game-image3:hover{
+	margin-top: 100px;
+	margin-left:20%;
+	height: 200px;
+	width:300px;
+	visibility: visible;
+	background: url(../images/heroes-logo.png) no-repeat;
+	background-size: 100%, 100%;
+}
+footer{
+	height: 30vh;
+	background: #212121;
+}

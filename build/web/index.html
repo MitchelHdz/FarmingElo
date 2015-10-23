@@ -1,16 +1,142 @@
+
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link rel="stylesheet" href="stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="stylesheets/animations.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/favicon.png" sizes="16x16">
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="javascripts/main.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script type="text/javascript" src="javascripts/css3-animate-it.js"></script>
+    <title>Farming Elo</title>
+  </head>
+  <body>
+  <header id="header" class="header">
+    <nav id="nav">
+			<ul>
+				<!-- <li><a href="{% url 'home:index' %}">Inicio</a></li> -->
+				<li>
+					<a href="" class="icon fa-angle-down">Explora</a>
+					<ul>
+						<li><a href="{% url 'state:states' %}">Estados</a></li>
+						<li><a href="{% url 'place:places' %}">Lugares</a></li>
+						<li><a href="{% url 'directory:directory' %}">Directorio</a></li>
+						<li><a href="{% url 'activity:activities' %}">¿Que hacer?</a>
+							<ul>
+								<li><a href="{% url 'home:near' %}">Cerca de ti</a></li>
+								<li><a href="{% url 'activity:activities' %}">Todas las actividades</a></li>
+							</ul>
+						</li>
+						<li><a href="{% url 'tour:tours' %}">Tours</a></li>
+						<li><a href="">Aventureros</a>
+							<ul>
+								<li><a href="{% url 'socialAuth:guides' %}">Guías</a></li>
+								<li><a href="{% url 'socialAuth:show_users' %}">Usuarios</a></li>
+							</ul>
+						</li>
+						<li><a href="{% url 'route:routes' %}">Rutas</a></li>
+					</ul>
+				</li>
+				<li><a href="{% url 'home:faq' %}">FAQ</a></li>
+				<li><a href="{% url 'socialAuth:new_guide' %}">¿Quieres ser guía?</a></li>
+				<li><a href="http://blog.yalkumexico.com">Blog</a></li>
+
+					<li><a href="/profile" class="button">Perfil</a></li>
+					<li><a href="/logout/?next={{path}}" class="button">Salir</a></li>
+
+					<li><a href="/log_in" class="button">Iniciar Sesión</a></li>
+
+			</ul>
+		</nav>
+      <div class="logo animatedParent" data-sequence="500">
+    <i class="fa fa-gamepad fa-5x"></i>
+    </div>
+      <a href="#">
+      <div class="login" onclick="closePopup()" id="popup">
+      <h3>Iniciar Sesion</h3> 
+      </div>
+      </a>
+    <div class="slogan">
+      <h1 class="name">Farming Elo</h1>  
+    </div> 
+    <div class="information"> 
+      <h3> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint dolore, sit quis perferendis repellendus et vero laborum doloremque optio sapiente, iste ducimus corporis veritatis est nam sunt necessitatibus odio incidunt!</h3> 
+    </div>
+    <div class="scrolldown">
+      <i class="fa fa-caret-down fa-4x"></i>
+    </div>
+  </header>  
+  <section class="popup-login" id="popup-login">
+    <div class="background-login">
+      <div class="close-popup" onclick="closePopup()" id="btn-popup">
+        <i class="fa fa-times fa-2x"></i>
+      </div>
+      <div class="form-login">
+         <h2>Ingresa con Facebook o Twitch</h2>         
+        <form action="index_submit" method="get" accept-charset="utf-8">
+          <div class="login-facebook">
+            <i class="fa fa-facebook fa-1x"></i><h4>Facebook</h4>
+          </div>
+          <div class="login-twitch">
+            <i class="fa fa-twitch fa-1x"></i><h4>Twitch</h4>
+          </div>
+          <h2>Ingresa con tu cuenta</h2>    
+          <input type="text" name="username" value="" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'" class="username-login">
+          <input type="password" name="password" value="" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" class="password-login">
+          <button type="submit" class="button-login"><i class="fa fa-sign-in fa-1x"></i> Entrar </button>
+        </form>
+        <p>Sin cuenta?</p><a href="">Registrate aqui</a>
+      </div>
+    </div>
+  </section >
+  <main>
+  <section class="information2">
+    <div class="communities">
+     <h2>Forma parte de la comunidad de tu juego preferido</h2>
+    </div>
+     <!-- <div class="row"> -->
+       <div class="col-md-4 container-fluid games">
+          <div class="game-image2">
+          </div>
+          <div class="game-name2">
+            <h3>Dota 2 (Proximamente)</h3>
+          </div>
+       </div>
+       <div class="col-md-4">
+          <div class="game-image1">
+          </div>
+          <div class="game-name1">
+            <h3>League of Legends</h3>
+          </div>
+          
+       </div>
+       <div class="col-md-4">
+         <div class="game-image3">          
+         </div>
+         <div class="game-name3">
+           <h3>Heroes of the Storm (Proximamente)</h3>
+         </div>
+       <!-- </div> -->
+     </div>
+
+  </section> 
+  <section class="information3">
+      <div class="players">
+          
+      </div>
+  </section> 
+  <section class="information4">
+    
+  </section>  
+  </main>
+  <footer>
+    
+  </footer>
+  </body>
 </html>
