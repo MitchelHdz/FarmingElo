@@ -4,6 +4,7 @@ body{
 	background-color: #EEEEEE;
 	font-family: 'Raleway';
 	display: block;
+	position: absolute;
 	/*width:100%;
 	height:100%;*/
 }
@@ -14,8 +15,9 @@ a:link, a:visited{
 	margin: 0px;
 }
 .header{
-	background-image: url(../images/image1.jpg);
+	background-image: url(../images/image4.jpg);
 	/*background-color: #B71C1C;*/
+	background-size: 100%, 100%;
 	height: 95vh;
 	min-height:95%;
 	width: 100%;
@@ -29,22 +31,24 @@ a:link, a:visited{
 }
 .logo{
 	/*background-image: url(/images/beavent_blanco_360.png);*/
-	color: rgba(238, 238, 238, 0.9);
-	height: 200px;
-	width: 100%;
-	font-size: 4em;
-	text-align: center;
+	margin-left: 37vw;
+	height: 50vh;
+	width:40vw;
+	position: relative;
+	top:100px;
+	background: url(../images/farmingelo22.png) no-repeat;
+	background-size: 65%, 100%;
 
 }
 .fa-5x{
 
 }
 .slogan{
-	margin-left: 30%;
+	margin-left: 25%;
 	/*border-bottom: 5px solid #EEEEEE;*/
 	padding-bottom: 10px;
 	padding-top: 30px;
-	width: 40%;
+	width: 50%;
 	text-align: center;
 	font-family: Montserrat;
 
@@ -64,10 +68,9 @@ a:link, a:visited{
 }
 .information{
 	color: rgba(238, 238, 238, 0.9);
-	margin-left: 30%;
-	padding-top: 10px;
+	padding-top: 20px;
 	text-align: center;
-	width: 40%;
+	-webkit-filter: blur(0px);
 }
 .scrolldown{
 	color: rgba(238, 238, 238, 0.9);
@@ -79,6 +82,16 @@ a:link, a:visited{
 	bottom: 1px;
 }
 .popup-login{
+	position: fixed;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	min-height:100%;
+	z-index: 999;
+}
+.popup-register{
 	position: absolute;
 	visibility: hidden;
 	top: 0;
@@ -126,7 +139,7 @@ a:link, a:visited{
 	padding-top: 5px;
 }
 .form-login a:hover{
-	color: rgba(183, 28, 28, 1);
+	color: #304FFE;
 }
 .login-facebook{
 	background: rgba(48, 63, 159, 0.9);
@@ -248,7 +261,7 @@ a:link, a:visited{
 
 }
 .button-login{
-	background: rgba(183, 28, 28, 0.9);
+	background: rgba(48, 79, 254, 0.9);
 	border: none;
 	color: #EEEEEE;
 	height: 40px;
@@ -259,11 +272,12 @@ a:link, a:visited{
 	font-family: Montserrat;
 }
 .button-login:hover{
-	background: rgba(183, 28, 28, 1);
+	background: rgba(48, 79, 254, 1);
 }
 .information2{
 	height: 90vh;
-	background: #D7CCC8;
+	background: #FFFFFF;
+	text-align: center;
 }
 .information2 .communities h2{
 	color: #212121;
@@ -303,6 +317,9 @@ a:link, a:visited{
 .game-name1 h3{
 	margin: 0px;
 }
+h2,h1{
+	margin-top: 0;
+}
 .game-name2{
 	background: #212121;
 	color: #EEEEEE;
@@ -331,8 +348,20 @@ a:link, a:visited{
 }
 .information3{
 	height: 90vh;
-	background: #B71C1C;
+	background: #212121;
+	text-align: center;
 
+
+}
+.information5{
+	height: 90vh;
+	background: #BDBDBD;
+	text-align: center;
+
+
+}
+.layout1{
+	color: #FFFFFF;
 }
 .game-image2{
 	margin-top: 100px;
@@ -356,7 +385,18 @@ a:link, a:visited{
 }
 .information4{
 	height: 90vh;
-	background: #D7CCC8;
+	background-image: url(../images/image5.jpg);
+	background-size: 100%, 100%;
+	color: #FFFFFF;
+}
+.tournaments{
+	margin-left:10%;
+	padding-top:10%;
+}
+.tournaments h1{
+	padding-bottom:50px;
+	font-size:6em;
+	font-family: Montserrat;
 }
 .game-image3{
 	margin-top: 100px;
@@ -377,5 +417,5 @@ a:link, a:visited{
 }
 footer{
 	height: 30vh;
-	background: #212121;
+	background: #304FFE;
 }

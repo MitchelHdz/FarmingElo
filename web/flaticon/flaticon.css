@@ -1,0 +1,85 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("flaticon.eot");
+	src: url("flaticon.eot#iefix") format("embedded-opentype"),
+	url("flaticon.woff") format("woff"),
+	url("flaticon.ttf") format("truetype"),
+	url("flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 200px;
+font-style: normal;
+margin-left: 20px;
+}.flaticon-coins36:before {
+	content: "\e000";
+}
+.flaticon-coworkers1:before {
+	content: "\e001";
+}
+.flaticon-crowd:before {
+	content: "\e002";
+}
+.flaticon-cutting4:before {
+	content: "\e003";
+}
+.flaticon-four47:before {
+	content: "\e004";
+}
+.flaticon-game27:before {
+	content: "\e005";
+}
+.flaticon-game33:before {
+	content: "\e006";
+}
+.flaticon-gamepad19:before {
+	content: "\e007";
+}
+.flaticon-games8:before {
+	content: "\e008";
+}
+.flaticon-group:before {
+	content: "\e009";
+}
+.flaticon-heart114:before {
+	content: "\e00a";
+}
+.flaticon-heart99:before {
+	content: "\e00b";
+}
+.flaticon-male182:before {
+	content: "\e00c";
+}
+.flaticon-monitor49:before {
+	content: "\e00d";
+}
+.flaticon-network13:before {
+	content: "\e00e";
+}
+.flaticon-new105:before {
+	content: "\e00f";
+}
+.flaticon-premium1:before {
+	content: "\e010";
+}
+.flaticon-shield77:before {
+	content: "\e011";
+}
+.flaticon-sign20:before {
+	content: "\e012";
+}
+.flaticon-three85:before {
+	content: "\e013";
+}
+.flaticon-user43:before {
+	content: "\e014";
+}
+.flaticon-versus:before {
+	content: "\e015";
+}
+.flaticon-xbox19:before {
+	content: "\e016";
+}
