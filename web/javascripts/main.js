@@ -1,29 +1,41 @@
 
 var close_popup = document.getElementById('btn-popup'); // Assumes element with id='button'
 
-function closePopup() {
-    console.log('test');
-    var div = document.getElementById('popup-login');
-    var background = document.getElementById('header') 
-    if (div.style.visibility !== 'hidden') {
-        div.style.visibility = 'hidden';
-        background.className= 'header';
-    }
-    else {
-        div.style.visibility = 'visible';
-        background.className= 'header blur-filter';
-    }
+function PopupLogin() {
+    var popup_login = document.getElementById('popup-login');
+    var popup_register = document.getElementById('popup-register');
+    var isVisible = $( "#popup-login" ).is( ":visible" );
+    var isHidden = $( "#popup-login" ).is( ":hidden" );
+    $('#popup-login').toggle("slow");
+        
+   if(isHidden){
+           $('#header').addClass('blur-filter');
+           $('#main').addClass('blur-filter');
+           $('#footer').addClass('blur-filter');
+       }
+   else if(isVisible){
+           $('#header').removeClass('blur-filter');
+           $('#main').removeClass('blur-filter');
+           $('#footer').removeClass('blur-filter');
+       }
+
 };
-function closePopup() {
-    console.log('test');
-    var div = document.getElementById('popup-login');
-    var background = document.getElementById('header') 
-    if (div.style.visibility !== 'hidden') {
-        div.style.visibility = 'hidden';
-        background.className= 'header';
-    }
-    else {
-        div.style.visibility = 'visible';
-        background.className= 'header blur-filter';
-    }
+function PopupRegister(){
+    var popup_login = document.getElementById('popup-login');
+    var popup_register = document.getElementById('popup-register');
+    var isVisible = $( "#popup-register" ).is( ":visible" );
+    var isHidden = $( "#popup-register" ).is( ":hidden" );
+    var isVisibleLogin = $( "#popup-login" ).is( ":visible" );
+    $('#popup-register').toggle("slow");
+    $('#popup-login').toggle("slow");
+    if(isHidden){
+            $('#header').addClass('blur-filter');
+            $('#main').addClass('blur-filter');
+            $('#footer').addClass('blur-filter');
+        }
+    else if(isVisible && isVisibleLogin){
+            $('#header').removeClass('blur-filter');
+            $('#main').removeClass('blur-filter');
+            $('#footer').removeClass('blur-filter');
+        }
 };

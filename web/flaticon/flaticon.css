@@ -11,7 +11,6 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
 	font-family: Flaticon;
-        font-size: 200px;
 font-style: normal;
 margin-left: 20px;
 }.flaticon-coins36:before {
@@ -26,60 +25,78 @@ margin-left: 20px;
 .flaticon-cutting4:before {
 	content: "\e003";
 }
-.flaticon-four47:before {
+.flaticon-data-storage4:before {
 	content: "\e004";
 }
-.flaticon-game27:before {
+.flaticon-fileformat7:before {
 	content: "\e005";
 }
-.flaticon-game33:before {
+.flaticon-four47:before {
 	content: "\e006";
 }
-.flaticon-gamepad19:before {
+.flaticon-game27:before {
 	content: "\e007";
 }
-.flaticon-games8:before {
+.flaticon-game33:before {
 	content: "\e008";
 }
-.flaticon-group:before {
+.flaticon-gamepad19:before {
 	content: "\e009";
 }
-.flaticon-heart114:before {
+.flaticon-games8:before {
 	content: "\e00a";
 }
-.flaticon-heart99:before {
+.flaticon-group:before {
 	content: "\e00b";
 }
-.flaticon-male182:before {
+.flaticon-heart114:before {
 	content: "\e00c";
 }
-.flaticon-monitor49:before {
+.flaticon-heart99:before {
 	content: "\e00d";
 }
-.flaticon-network13:before {
+.flaticon-internet116:before {
 	content: "\e00e";
 }
-.flaticon-new105:before {
+.flaticon-logotype49:before {
 	content: "\e00f";
 }
-.flaticon-premium1:before {
+.flaticon-magnifier13:before {
 	content: "\e010";
 }
-.flaticon-shield77:before {
+.flaticon-male182:before {
 	content: "\e011";
 }
-.flaticon-sign20:before {
+.flaticon-monitor49:before {
 	content: "\e012";
 }
-.flaticon-three85:before {
+.flaticon-network13:before {
 	content: "\e013";
 }
-.flaticon-user43:before {
+.flaticon-new105:before {
 	content: "\e014";
 }
-.flaticon-versus:before {
+.flaticon-premium1:before {
 	content: "\e015";
 }
-.flaticon-xbox19:before {
+.flaticon-programminglanguage2:before {
 	content: "\e016";
+}
+.flaticon-shield77:before {
+	content: "\e017";
+}
+.flaticon-sign20:before {
+	content: "\e018";
+}
+.flaticon-three85:before {
+	content: "\e019";
+}
+.flaticon-user43:before {
+	content: "\e01a";
+}
+.flaticon-versus:before {
+	content: "\e01b";
+}
+.flaticon-xbox19:before {
+	content: "\e01c";
 }

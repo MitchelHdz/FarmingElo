@@ -15,11 +15,10 @@ a:link, a:visited{
 	margin: 0px;
 }
 .header{
-	background-image: url(../images/image4.jpg);
+	background: transparent;
 	/*background-color: #B71C1C;*/
-	background-size: 100%, 100%;
 	height: 95vh;
-	min-height:95%;
+	min-height:95vh;
 	width: 100%;
 	/*overflow: hidden;*/
 	/*background:
@@ -40,9 +39,6 @@ a:link, a:visited{
 	background-size: 65%, 100%;
 
 }
-.fa-5x{
-
-}
 .slogan{
 	margin-left: 25%;
 	/*border-bottom: 5px solid #EEEEEE;*/
@@ -53,12 +49,19 @@ a:link, a:visited{
 	font-family: Montserrat;
 
 }
-.login{
-	position: fixed;
+.navbar{
+	position: absolute;
 	right: 0px;
 	top: 0px;
 	padding-right: 15px;
 	color: #EEEEEE;
+	height:150px;
+}
+.login{
+
+}
+.login:hover{
+	cursor: pointer;
 }
 .name{
 	color: rgba(238, 238, 238, 0.9);
@@ -67,7 +70,7 @@ a:link, a:visited{
 	text-align: center;
 }
 .information{
-	color: rgba(238, 238, 238, 0.9);
+	color: rgba(238, 238, 238, 1);
 	padding-top: 20px;
 	text-align: center;
 	-webkit-filter: blur(0px);
@@ -83,7 +86,7 @@ a:link, a:visited{
 }
 .popup-login{
 	position: fixed;
-	visibility: hidden;
+	display: none;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -92,8 +95,8 @@ a:link, a:visited{
 	z-index: 999;
 }
 .popup-register{
-	position: absolute;
-	visibility: hidden;
+	position: fixed;
+	display: none;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -102,7 +105,10 @@ a:link, a:visited{
 	z-index: 999;
 }
 .blur-filter{
-	-webkit-filter: blur(5px);
+	-webkit-filter: blur(10px);
+}
+.blur-filter2{
+	-webkit-filter: blur(0px);
 }
 .background-login{
 	background-color: rgba(33, 33, 33, 0.7);
@@ -136,7 +142,7 @@ a:link, a:visited{
 }
 .form-login h2{
 	margin: 0.2em;
-	padding-top: 5px;
+	padding-top: -10px;
 }
 .form-login a:hover{
 	color: #304FFE;
@@ -239,7 +245,7 @@ a:link, a:visited{
 .password-login::placeholder{
 	color: rgba(238, 238, 238, 0.6);
 	text-align: center;
-	border: 2px solid  rgba(238, 238, 238, 0.6);;
+	border: 2px solid rgba(238, 238, 238, 0.6);;
 	border-radius: 2px;
 	margin: 10px;
 }
@@ -279,6 +285,21 @@ a:link, a:visited{
 	background: #FFFFFF;
 	text-align: center;
 }
+.landing{
+	font-size: 200px;
+	color: #000;
+}
+.landing1{
+	color: #EEE;
+	font-size: 200px;
+}
+.landing2{
+	color: #EEE;
+	font-size: 100px;
+}
+.icon1{
+	color: #B71C1C;
+}
 .information2 .communities h2{
 	color: #212121;
 	text-align: center;
@@ -286,7 +307,13 @@ a:link, a:visited{
 	padding-top: 5%;
 }
 
-
+.steiner{
+	padding-top: 100px;
+}
+.center{
+	width:80%;
+	margin-left:10%;
+}
 
 .game-image1{
 	margin-top: 100px;
@@ -350,12 +377,13 @@ h2,h1{
 	height: 90vh;
 	background: #212121;
 	text-align: center;
+	vertical-align: middle;
 
 
 }
 .information5{
 	height: 90vh;
-	background: #BDBDBD;
+	background: #E0E0E0;
 	text-align: center;
 
 
@@ -385,17 +413,18 @@ h2,h1{
 }
 .information4{
 	height: 90vh;
-	background-image: url(../images/image5.jpg);
+	background: transparent;
+	background-color: rgba(66, 66, 66, 0.5);
 	background-size: 100%, 100%;
 	color: #FFFFFF;
 }
 .tournaments{
-	margin-left:10%;
 	padding-top:10%;
+	padding-left:10%;
 }
 .tournaments h1{
 	padding-bottom:50px;
-	font-size:6em;
+	font-size:5em;
 	font-family: Montserrat;
 }
 .game-image3{
@@ -416,6 +445,57 @@ h2,h1{
 	background-size: 100%, 100%;
 }
 footer{
-	height: 30vh;
-	background: #304FFE;
+	height: 40vh;
+	background: #212121;
+}
+.about-page{
+	text-align:center;
+	margin-top: 30px;
+	padding-top: 20px;
+	border-right: solid 2px #424242;
+	height:70%;
+	color: #eee;
+}
+.about-page h1{
+	vertical-align: middle;
+}
+.icons-social{
+	
+	text-align: center;
+	font-size: 50px;
+}
+.social{
+	margin-top: 50px;
+	text-align:center;
+}
+.icons-social i{
+	color: #eee;
+	margin: 10px;
+}
+.fa-facebook:hover{
+	color: #304FFE;
+}
+.fa-twitter:hover{
+	color: #03A9F4;
+}
+.fa-twitch:hover{
+	color: #6200EA;
+}
+.fa-heart:hover{
+	color: #D32F2F;
+}
+.fa-coffee:hover{
+	color: #6D4C41;
+}
+.flaticon-coins36:hover{
+	color: #FFC107;
+}
+.flaticon-male182:hover{
+	color: #33691E;
+}
+.flaticon-premium1:hover{
+	color: #D32F2F;
+}
+.blur-content{
+	margin-top: 20px;
 }
