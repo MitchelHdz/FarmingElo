@@ -14,6 +14,25 @@ a:link, a:visited{
 	text-decoration: none;
 	margin: 0px;
 }
+.nav.navbar{
+	background: none;
+	background-color: transparent;
+}
+.navbar{
+	background: none;
+	background-color: transparent;
+}
+.navbar-inverse{
+	background: rgba(0,0,0,0.9);
+}
+.navbar-nav > li > a{
+	background-color: transparent;
+	border-color: transparent;
+}
+.navbar-nav > li > a:hover{
+	background-color: transparent;
+	border-color: transparent;
+}
 .header{
 	background: transparent;
 	/*background-color: #B71C1C;*/
