@@ -28,6 +28,65 @@ a:link, a:visited{
 	  ),
 	  url(../images/image1.jpg);*/
 }
+
+.srch-form {
+  position: relative;
+  width: 44px;
+}
+
+.srch-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 44px;
+  height: 40px;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.srch-wrapper.open {
+  width: 200px;
+}
+
+.srch-input {
+  position: relative;
+  background-color: transparent;
+  height: 44px;
+  line-height: 26px;
+  padding: 5px 10px 5px 32px;
+  box-sizing: border-box;
+  border: 2px solid #ddd;
+  margin: 0;
+  width: 100%;
+}
+.srch-input:focus {
+  outline: none;
+  border-color: #aaa;
+}
+
+.srch-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  color: #ddd;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+}
+.srch-button:focus {
+  outline: none;
+}
+
+.srch-input:focus + .srch-button,
+.srch-button:hover {
+  color: #aaa;
+}
+
 .logo{
 	/*background-image: url(/images/beavent_blanco_360.png);*/
 	margin-left: 37vw;
@@ -49,19 +108,19 @@ a:link, a:visited{
 	font-family: Montserrat;
 
 }
-.navbar{
-	position: absolute;
-	right: 0px;
-	top: 0px;
-	padding-right: 15px;
-	color: #EEEEEE;
-	height:150px;
+.navbar-t{
+	background: transparent;
 }
 .login{
-
+	background:transparent;
+	border:none;
+	margin-right:0px;
 }
 .login:hover{
 	cursor: pointer;
+}
+ul{
+	margin: 0px;
 }
 .name{
 	color: rgba(238, 238, 238, 0.9);
