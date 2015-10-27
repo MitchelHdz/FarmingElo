@@ -56,7 +56,7 @@ a:link, a:visited{
 .srch-wrapper {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 150px;
   width: 44px;
   height: 40px;
   -moz-transition: all 0.3s linear;
