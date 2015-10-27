@@ -4,6 +4,7 @@ body{
 	background-color: #EEEEEE;
 	font-family: 'Raleway';
 	display: block;
+	position: absolute;
 	/*width:100%;
 	height:100%;*/
 }
@@ -13,11 +14,30 @@ a:link, a:visited{
 	text-decoration: none;
 	margin: 0px;
 }
+.nav.navbar{
+	background: none;
+	background-color: transparent;
+}
+.navbar{
+	background: none;
+	background-color: transparent;
+}
+.navbar-inverse{
+	background: rgba(0,0,0,0.9);
+}
+.navbar-nav > li > a{
+	background-color: transparent;
+	border-color: transparent;
+}
+.navbar-nav > li > a:hover{
+	background-color: transparent;
+	border-color: transparent;
+}
 .header{
-	background-image: url(../images/image1.jpg);
+	background: transparent;
 	/*background-color: #B71C1C;*/
 	height: 95vh;
-	min-height:95%;
+	min-height:95vh;
 	width: 100%;
 	/*overflow: hidden;*/
 	/*background:
@@ -27,34 +47,102 @@ a:link, a:visited{
 	  ),
 	  url(../images/image1.jpg);*/
 }
+
+.srch-form {
+  position: relative;
+  width: 44px;
+}
+
+.srch-wrapper {
+  position: absolute;
+  top: 2px;
+  right: 150px;
+  width: 44px;
+  height: 40px;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.srch-wrapper.open {
+  width: 200px;
+}
+
+.srch-input {
+  position: relative;
+  background-color: transparent;
+  height: 44px;
+  line-height: 26px;
+  padding: 5px 10px 5px 32px;
+  box-sizing: border-box;
+  border: 2px solid #ddd;
+  margin: 0;
+  border-radius: 100px;
+  width: 100%;
+  color: #eee;
+  font-family: 'Raleway';
+}
+.srch-input:focus {
+  outline: none;
+  border-color: #aaa;
+}
+
+.srch-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  color: #ddd;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+}
+.srch-button:focus {
+  outline: none;
+}
+
+.srch-input:focus + .srch-button,
+.srch-button:hover {
+  color: #aaa;
+}
+
 .logo{
 	/*background-image: url(/images/beavent_blanco_360.png);*/
-	color: rgba(238, 238, 238, 0.9);
-	height: 200px;
-	width: 100%;
-	font-size: 4em;
-	text-align: center;
-
-}
-.fa-5x{
+	margin-left: 37vw;
+	height: 50vh;
+	width:40vw;
+	position: relative;
+	top:100px;
+	background: url(../images/farmingelo22.png) no-repeat;
+	background-size: 65%, 100%;
 
 }
 .slogan{
-	margin-left: 30%;
+	margin-left: 25%;
 	/*border-bottom: 5px solid #EEEEEE;*/
 	padding-bottom: 10px;
 	padding-top: 30px;
-	width: 40%;
+	width: 50%;
 	text-align: center;
 	font-family: Montserrat;
 
 }
+.navbar-t{
+	background: transparent;
+}
 .login{
-	position: fixed;
-	right: 0px;
-	top: 0px;
-	padding-right: 15px;
-	color: #EEEEEE;
+	background:transparent;
+	border:none;
+	margin-right:0px;
+}
+.login:hover{
+	cursor: pointer;
+}
+ul{
+	margin: 0px;
 }
 .name{
 	color: rgba(238, 238, 238, 0.9);
@@ -63,11 +151,10 @@ a:link, a:visited{
 	text-align: center;
 }
 .information{
-	color: rgba(238, 238, 238, 0.9);
-	margin-left: 30%;
-	padding-top: 10px;
+	color: rgba(238, 238, 238, 1);
+	padding-top: 20px;
 	text-align: center;
-	width: 40%;
+	-webkit-filter: blur(0px);
 }
 .scrolldown{
 	color: rgba(238, 238, 238, 0.9);
@@ -79,8 +166,18 @@ a:link, a:visited{
 	bottom: 1px;
 }
 .popup-login{
-	position: absolute;
-	visibility: hidden;
+	position: fixed;
+	display: none;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	min-height:100%;
+	z-index: 999;
+}
+.popup-register{
+	position: fixed;
+	display: none;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -89,7 +186,10 @@ a:link, a:visited{
 	z-index: 999;
 }
 .blur-filter{
-	-webkit-filter: blur(5px);
+	-webkit-filter: blur(10px);
+}
+.blur-filter2{
+	-webkit-filter: blur(0px);
 }
 .background-login{
 	background-color: rgba(33, 33, 33, 0.7);
@@ -123,10 +223,10 @@ a:link, a:visited{
 }
 .form-login h2{
 	margin: 0.2em;
-	padding-top: 5px;
+	padding-top: -10px;
 }
 .form-login a:hover{
-	color: rgba(183, 28, 28, 1);
+	color: #304FFE;
 }
 .login-facebook{
 	background: rgba(48, 63, 159, 0.9);
@@ -226,7 +326,7 @@ a:link, a:visited{
 .password-login::placeholder{
 	color: rgba(238, 238, 238, 0.6);
 	text-align: center;
-	border: 2px solid  rgba(238, 238, 238, 0.6);;
+	border: 2px solid rgba(238, 238, 238, 0.6);;
 	border-radius: 2px;
 	margin: 10px;
 }
@@ -248,7 +348,7 @@ a:link, a:visited{
 
 }
 .button-login{
-	background: rgba(183, 28, 28, 0.9);
+	background: rgba(48, 79, 254, 0.9);
 	border: none;
 	color: #EEEEEE;
 	height: 40px;
@@ -259,11 +359,27 @@ a:link, a:visited{
 	font-family: Montserrat;
 }
 .button-login:hover{
-	background: rgba(183, 28, 28, 1);
+	background: rgba(48, 79, 254, 1);
 }
 .information2{
 	height: 90vh;
-	background: #D7CCC8;
+	background: #FFFFFF;
+	text-align: center;
+}
+.landing{
+	font-size: 200px;
+	color: #000;
+}
+.landing1{
+	color: #EEE;
+	font-size: 200px;
+}
+.landing2{
+	color: #EEE;
+	font-size: 100px;
+}
+.icon1{
+	color: #B71C1C;
 }
 .information2 .communities h2{
 	color: #212121;
@@ -272,7 +388,13 @@ a:link, a:visited{
 	padding-top: 5%;
 }
 
-
+.steiner{
+	padding-top: 100px;
+}
+.center{
+	width:80%;
+	margin-left:10%;
+}
 
 .game-image1{
 	margin-top: 100px;
@@ -303,6 +425,9 @@ a:link, a:visited{
 .game-name1 h3{
 	margin: 0px;
 }
+h2,h1{
+	margin-top: 0;
+}
 .game-name2{
 	background: #212121;
 	color: #EEEEEE;
@@ -331,8 +456,21 @@ a:link, a:visited{
 }
 .information3{
 	height: 90vh;
-	background: #B71C1C;
+	background: #212121;
+	text-align: center;
+	vertical-align: middle;
 
+
+}
+.information5{
+	height: 90vh;
+	background: #E0E0E0;
+	text-align: center;
+
+
+}
+.layout1{
+	color: #FFFFFF;
 }
 .game-image2{
 	margin-top: 100px;
@@ -356,7 +494,19 @@ a:link, a:visited{
 }
 .information4{
 	height: 90vh;
-	background: #D7CCC8;
+	background: transparent;
+	background-color: rgba(66, 66, 66, 0.5);
+	background-size: 100%, 100%;
+	color: #FFFFFF;
+}
+.tournaments{
+	padding-top:10%;
+	padding-left:10%;
+}
+.tournaments h1{
+	padding-bottom:50px;
+	font-size:5em;
+	font-family: Montserrat;
 }
 .game-image3{
 	margin-top: 100px;
@@ -376,6 +526,57 @@ a:link, a:visited{
 	background-size: 100%, 100%;
 }
 footer{
-	height: 30vh;
+	height: 40vh;
 	background: #212121;
+}
+.about-page{
+	text-align:center;
+	margin-top: 30px;
+	padding-top: 20px;
+	border-right: solid 2px #424242;
+	height:70%;
+	color: #eee;
+}
+.about-page h1{
+	vertical-align: middle;
+}
+.icons-social{
+	
+	text-align: center;
+	font-size: 50px;
+}
+.social{
+	margin-top: 50px;
+	text-align:center;
+}
+.icons-social i{
+	color: #eee;
+	margin: 10px;
+}
+.fa-facebook:hover{
+	color: #304FFE;
+}
+.fa-twitter:hover{
+	color: #03A9F4;
+}
+.fa-twitch:hover{
+	color: #6200EA;
+}
+.fa-heart:hover{
+	color: #D32F2F;
+}
+.fa-coffee:hover{
+	color: #6D4C41;
+}
+.flaticon-coins36:hover{
+	color: #FFC107;
+}
+.flaticon-male182:hover{
+	color: #33691E;
+}
+.flaticon-premium1:hover{
+	color: #D32F2F;
+}
+.blur-content{
+	margin-top: 20px;
 }
