@@ -12,11 +12,13 @@ function PopupLogin() {
            $('#header').addClass('blur-filter');
            $('#main').addClass('blur-filter');
            $('#footer').addClass('blur-filter');
+           $('#nav').addClass('blur-filter');
        }
    else if(isVisible){
            $('#header').removeClass('blur-filter');
            $('#main').removeClass('blur-filter');
            $('#footer').removeClass('blur-filter');
+           $('#nav').removeClass('blur-filter');
        }
 
 };
@@ -32,11 +34,13 @@ function PopupRegister(){
             $('#header').addClass('blur-filter');
             $('#main').addClass('blur-filter');
             $('#footer').addClass('blur-filter');
+            $('#nav').addClass('blur-filter');
         }
     else if(isVisible && isVisibleLogin){
             $('#header').removeClass('blur-filter');
             $('#main').removeClass('blur-filter');
             $('#footer').removeClass('blur-filter');
+            $('#nav').removeClass('blur-filter');
         }
 };
 $(function() {
@@ -47,4 +51,15 @@ $(function() {
       .find('.srch-input')[isOpen ? 'blur' : 'focus']();
   });
   
-})
+});
+$(function(){
+    $('#profile-picture').hover(function() {
+    $('#profile-picture').css({' background':
+          'linear-gradient(rgba( 33, 33, 33, 0.50), rgba(33, 33, 33, 0.50)), url(../images/profile1.jpg) no-repeat;'});
+    $('#change-picture').toggle();
+  }, function() {
+    $('#profile-picture').css({'background': 'url(../images/profile1.jpg) no-repeat;'});
+    $('#change-picture').toggle();
+  }
+);
+});
