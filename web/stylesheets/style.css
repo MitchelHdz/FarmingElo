@@ -27,6 +27,9 @@ a:link, a:visited{
 	position:relative;
 	color: #EEEEEE;
 }
+.navbar-t{
+    background: transparent;
+}
 .navbar-nav > li > a{
 	background-color: transparent;
 	border-color: transparent;
@@ -144,9 +147,6 @@ a:link, a:visited{
 	text-align: center;
 	font-family: Montserrat;
 
-}
-.navbar-t{
-	background: transparent;
 }
 .login{
 	background:transparent;
