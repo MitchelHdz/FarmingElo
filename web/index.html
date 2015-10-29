@@ -19,7 +19,7 @@
     </head>
     <body>
         <header id="header" class="header parallax-window" data-parallax="scroll" data-image-src="images/image4.jpg" data-position="bottom" data-speed="0.3">
-        <nav class="navbar-inverse" id="nav">
+            <nav class="navbar-inverse">
             <div class="container-fluid">
                 <div class="pull-left">
                     <a href="#" class="navbar-brand active">Farming ELO</a>
@@ -30,21 +30,21 @@
                     </ul>
                 </div>
                 <div class="pull-right">
-                    <form action="#" class="navbar-form navbar-left">
-                        <div class="srch-wrapper form-group">
-                            <input type="text" class="srch-input " placeholder="Buscar..." />
+                    <form action="#" class="navbar-left srch-form">
+                        <div class="srch-wrapper">
+                            <input type="search" class="srch-input" placeholder="Buscar..." />
                             <button class="srch-button" type="button">
                                 <i class="fa fa-search"></i>
                             </button>
                         </div>
                     </form>
                     <ul class="nav navbar-nav">
-                        <li><a href="#" class="login" onclick="PopupLogin()" id="popup"> Iniciar Sesión </a></li>
+                        <li><a href="#" class="login" onclick="PopupLogin()" id="popup"> <b>Iniciar Sesión </b></a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-            <div class="logo animatedParent" data-sequence="500">
+			<div class="logo animatedParent" data-sequence="500">
                 <br>
             </div>
             <div class="slogan"> 
@@ -60,10 +60,10 @@
                 </div>
                 <div class="form-login">      
                     <i class="flaticon-user43 steiner landing1"></i>
-                    <form action="index_submit" method="get" accept-charset="utf-8">
+                    <form action="Login" method="POST">
                         <h2>Ingresa con tu cuenta.</h2>    
-                        <input type="text" name="username" placeholder="Usuario" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Usuario'" class="username-login" required>
-                        <input type="password" name="password" placeholder="Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contraseña'" class="password-login" required>
+                        <input type="email" name="email_fl" placeholder="Correo" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo'" class="username-login" required>
+                        <input type="password" name="password_fl" placeholder="Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contraseña'" class="password-login" required>
                         <button type="submit" class="button-login"><i class="fa fa-sign-in fa-1x"></i> Entrar </button>
                     </form>
                     <p>¿Aún sin cuenta?</p><a href="#" onclick="PopupRegister()">Regístrate aquí.</a>
@@ -78,11 +78,11 @@
                 <div class="form-login">
                     <i class="flaticon-sign20 landing2"></i>
                     <h2>Regístrate</h2>         
-                    <form action="index_submit" method="get" accept-charset="utf-8">  
-                        <input type="text" name="username" placeholder="Usuario" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Usuario'" class="username-login" required>
-                        <input type="email" name="username" placeholder="Correo" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo'" class="username-login" required>
-                        <input type="password" name="password" placeholder="Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contraseña'" class="password-login" required>
-                        <input type="password" name="password" placeholder="Repetir Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Repetir Contraseña'" class="password-login" required>
+                    <form action="Register" method="POST" accept-charset="utf-8">  
+                        <input type="text" name="username_fr" placeholder="Usuario" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Usuario'" class="username-login" required>
+                        <input type="email" name="email_fr" placeholder="Correo" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Correo'" class="username-login" required>
+                        <input type="password" name="password_fr" placeholder="Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Contraseña'" class="password-login" required>
+                        <input type="password" name="rpassword_fr" placeholder="Repetir Contraseña" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Repetir Contraseña'" class="password-login" required>
                         <button type="submit" class="button-login"><i class="fa fa-sign-in fa-1x"></i> Enviar </button>
                     </form>
                 </div>
