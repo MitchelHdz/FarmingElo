@@ -7,70 +7,79 @@
         <meta charset='utf-8'>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="stylesheets/bootstrap.css">
-	<link rel="stylesheet" href="stylesheets/animations.css">
-	<link rel="stylesheet" href="stylesheets/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<link rel="icon" href="images/farmingelo222.png" sizes="16x16">
-	<link rel="stylesheet" type="text/css" href="flaticon/flaticon.css">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="bower_components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
-	<script src="javascripts/main.js" type="text/javascript" charset="utf-8" async defer></script>
-	<script type="text/javascript" src="javascripts/css3-animate-it.js"></script>
-	<script src="javascripts/parallax.js"></script>
-	<title>Perfil de <%=usuario%></title>
+        <link rel="stylesheet" href="stylesheets/animations.css">
+        <link rel="stylesheet" href="stylesheets/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="icon" href="images/farmingelo222.png" sizes="16x16">
+        <link rel="stylesheet" type="text/css" href="flaticon/flaticon.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
+        <script src="javascripts/main.js" type="text/javascript" charset="utf-8" async defer></script>
+        <script type="text/javascript" src="javascripts/css3-animate-it.js"></script>
+        <script src="javascripts/parallax.js"></script>
+        <title>Perfil de <%=usuario%></title>
     </head>
     <body>
+        <a class="flotante" href="#"  id="config"><i class="fa fa-cog fa-3x config" onmouseover="spin()"></i></a>
         <header id="header" class="header-profile parallax-window" data-parallax="scroll" data-image-src="images/image1.jpg" data-position="bottom" data-speed="0.3">
-	<nav class="navbar-inverse">
-	    <div class="container-fluid">
-	        <div class="pull-left">
-	            <a href="#" class="navbar-brand active">Farming ELO</a>
-	            <ul class="nav navbar-nav">
-	                <li>
-	                <li><a href="#"> News Feed </a></li>
-	            </ul>
-	        </div>
-	        <div class="pull-right">
-	            <form action="#" class="navbar-form navbar-left">
-	                <div class="srch-wrapper form-group">
-	                    <input type="text" class="srch-input " placeholder="Buscar..." />
-	                    <button class="srch-button" type="button">
-	                        <i class="fa fa-search"></i>
-	                    </button>
-	                </div>
-	            </form>
-	            <ul class="nav navbar-nav">
-	                <li><a href="profile.jsp" class="login" id="popup"><%=usuario%></a></li>
-	            </ul>
-	        </div>
-	    </div>
-	</nav>
-	</header><!-- /header -->
-	
-	<section class="profile-about">
-	<div class="profile-picture" id="profile-picture">
-		<span class="change-picture" id="change-picture"><i id="edit" class="fa fa-pencil"></i> Cambiar Foto</span>	
-
-	</div>
-	</section>
-	<main id="main">
-		
-	</main>
-<footer id="footer">
-    <div class="col-md-8 about-page">
-
-    <h1>Made with <i class="fa fa-heart"></i> + <i class="fa fa-coffee"></i></h1>
-    <h3><a href="https://twitter.com/Mitcheel_Hdz">@Mitcheel_Hdz</a></h3>
-    <h3><a href="https://twitter.com/Anthony_Steiner">@anthony_steiner</a></h3>
-</div>
-<div class="col-md-4 social">
-    <span class="icons-social">
-        <i class="fa fa-facebook"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-twitch"></i>
-    </span>
-</div>
-
-</footer>
+            <nav class="navbar-inverse">
+                <div class="container-fluid">
+                    <div class="pull-left">
+                        <a href="#" class="navbar-brand active">Farming ELO</a>
+                        <ul class="nav navbar-nav">
+                            <li>
+                            <li><a href="#"> News Feed </a></li>
+                        </ul>
+                    </div>
+                    <div class="pull-right">
+                        <form action="#" class="navbar-form navbar-left">
+                            <div class="srch-wrapper-prof form-group">
+                                <input type="text" class="srch-input " placeholder="Buscar..." />
+                                <button class="srch-button" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" ><img class="nav-profilepic img-circle" src="images/profile1.jpg"/> <%=usuario%> <i class="fa fa-angle-down"></i><i class=""></i></a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="profile.jsp" class="login" id="perfil"><i class="fa fa-user"></i> Mi Perfil</a></li>
+                                <li><a href="LogOut" class="login" id="logout"><i class="fa fa-sign-out"></i> Cerrar Sesión</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header><!-- /header -->
+            
+        <section class="profile-about">
+            <div class="row">
+                <div class=" col-md-6 rows-profile">
+                    <div class="profile-name">
+                        <h1 class="user-name"><%=usuario%></h1>
+                         <h4 class="user-name">Mitchel Hernández</h4>
+                    </div>
+                </div>
+                <div class="col-md-6 rows-profile">
+                    <div class="profile-info">
+                        <h4 class="user-info">"Si tu juego no está aquí, entonces no existe."</h4>
+                        <p class="user-info">18 años</p>
+                        <p class="user-info">México D.F.</p>
+                        <p class="user-info"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-picture" id="profile-picture">
+                <div class="profile-picture-alv">
+                    <span class="change-picture" id="change-picture"><i id="edit" class="fa fa-pencil"></i> Cambiar Foto</span>	
+                </div>    
+            </div>
+                    <div class="profile">
+                       jejeje 
+                    </div>
+        </section>
+            <main id="main">
+        </main>
+        
     </body>
 </html>

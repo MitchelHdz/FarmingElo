@@ -63,3 +63,11 @@ $(function(){
   }
 );
 });
+$(document).ready(function spin(){
+   $("#config").mouseover(function(event){
+      $("#config").addClass("fa-spin");
+   });
+   $("#config").mouseout(function(event){
+      $("#config").removeClass("fa-spin");
+   });
+});

@@ -56,16 +56,12 @@
             <div class="row">
                 <div class=" col-md-6 rows-profile">
                     <div class="profile-name">
-                        <h1 class="user-name"><%=usuario%></h1>
-                         <h4 class="user-name">Mitchel Hernández</h4>
+                         <h1 class="user-name"><%=usuario%></h1>
                     </div>
                 </div>
                 <div class="col-md-6 rows-profile">
                     <div class="profile-info">
-                        <h4 class="user-info">"Si tu juego no está aquí, entonces no existe."</h4>
-                        <p class="user-info">18 años</p>
-                        <p class="user-info">México D.F.</p>
-                        <p class="user-info"></p>
+                         <h4 class="user-info">GGG</h4>
                     </div>
                 </div>
             </div>

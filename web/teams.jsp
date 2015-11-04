@@ -1,5 +1,9 @@
-<%@page session="true" %>
-<%String usuario = (String)session.getAttribute("Usuario");%>
+<%-- 
+    Document   : teams.jsp
+    Created on : 03-nov-2015, 11:46:11
+    Author     : sebas
+--%>
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -17,7 +21,7 @@
         <script src="javascripts/main.js" type="text/javascript" charset="utf-8" async defer></script>
         <script type="text/javascript" src="javascripts/css3-animate-it.js"></script>
         <script src="javascripts/parallax.js"></script>
-        <title>Perfil de <%=usuario%></title>
+        <title>Perfil de Equipo</title>
     </head>
     <body>
         <a class="flotante" href="#"  id="config"><i class="fa fa-cog fa-3x config" onmouseover="spin()"></i></a>
@@ -41,7 +45,7 @@
                             </div>
                         </form>
                         <div class="dropdown">
-                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" ><img class="nav-profilepic img-circle" src="images/profile1.jpg"/> <%=usuario%> <i class="fa fa-angle-down"></i><i class=""></i></a>
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" ><img class="nav-profilepic img-circle" src="images/profile1.jpg"/> User <i class="fa fa-angle-down"></i><i class=""></i></a>
                             <ul class="dropdown-menu dropdown-menu-right">
                                 <li><a href="profile.jsp" class="login" id="perfil"><i class="fa fa-user"></i> Mi Perfil</a></li>
                                 <li><a href="LogOut" class="login" id="logout"><i class="fa fa-sign-out"></i> Cerrar Sesión</a></li>
@@ -56,16 +60,12 @@
             <div class="row">
                 <div class=" col-md-6 rows-profile">
                     <div class="profile-name">
-                        <h1 class="user-name"><%=usuario%></h1>
-                         <h4 class="user-name">Mitchel Hernández</h4>
+                         <h1 class="user-name"></h1>
                     </div>
                 </div>
                 <div class="col-md-6 rows-profile">
                     <div class="profile-info">
-                        <h4 class="user-info">"Si tu juego no está aquí, entonces no existe."</h4>
-                        <p class="user-info">18 años</p>
-                        <p class="user-info">México D.F.</p>
-                        <p class="user-info"></p>
+                         <h4 class="user-info">GGG</h4>
                     </div>
                 </div>
             </div>
