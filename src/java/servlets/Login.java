@@ -6,7 +6,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import Bases.User;
-import static java.lang.System.console;
 import static java.lang.System.out;
 import javax.servlet.http.HttpSession;
 
@@ -36,11 +35,16 @@ public class Login extends HttpServlet {
                 if (d.isAcountExists(cor, con)) 
                 {
                     String NombreUsuario = d.getUserByEmail(cor);
-                    String id_s = d.getIdByUser(NombreUsuario);
-                    int id = Integer.parseInt(id_s);
+                    String id_s = d.getIdtByUser(NombreUsuario);
+                    int idu = Integer.parseInt(id_s);
+                    String foto_url =d.getImgbyUser(NombreUsuario);
+                    String id = d.getIdbyUser(NombreUsuario);
+                    
                     respuesta.setAttribute("Usuario", NombreUsuario);
                     respuesta.setAttribute("Correo", cor);
-                    respuesta.setAttribute("Nivel", id);
+                    respuesta.setAttribute("Nivel", String.valueOf(idu));
+                    respuesta.setAttribute("Foto", foto_url);
+                    respuesta.setAttribute("Id", String.valueOf(id));
                     response.sendRedirect("profile.jsp");
                 } else 
                 {

@@ -2,13 +2,15 @@ package Bases;
 import java.sql.*;
 public class Base {
     public Connection conexion;
+    public Statement s;
     public final static String userDb = "root";
     public final static String passDb = "n0m3l0";
     
     //Conectar a la Base de datos
-    public void conectar() throws SQLException,ClassNotFoundException{
+    public Connection conectar() throws SQLException,ClassNotFoundException{
         Class.forName("com.mysql.jdbc.Driver");
         conexion=DriverManager.getConnection("jdbc:mysql://localhost/farmingelo",userDb, passDb);
+        return conexion;
     }
     
     //Desconectar a la Base de datos

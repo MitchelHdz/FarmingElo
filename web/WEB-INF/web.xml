@@ -12,6 +12,10 @@
         <servlet-name>LogOut</servlet-name>
         <servlet-class>servlets.LogOut</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ProfileUpload</servlet-name>
+        <servlet-class>servlets.ProfileUpload</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Register</servlet-name>
         <url-pattern>/Register</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>LogOut</servlet-name>
         <url-pattern>/LogOut</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ProfileUpload</servlet-name>
+        <url-pattern>/ProfileUpload</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

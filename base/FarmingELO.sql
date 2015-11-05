@@ -433,7 +433,7 @@ CREATE TABLE `usuarios` (
   `rating` int(4) NOT NULL DEFAULT '1000',
   `win` int(11) NOT NULL DEFAULT '0',
   `loss` int(11) NOT NULL DEFAULT '0',
-  `url_foto` varchar(45) DEFAULT NULL,
+  `url_foto` varchar(45) DEFAULT 'img-profile/profile_user.jpg',
   `id_pais` int(11) DEFAULT NULL,
   `id_tipo_usuario` int(11) NOT NULL,
   PRIMARY KEY (`id_usuario`),
@@ -441,7 +441,7 @@ CREATE TABLE `usuarios` (
   KEY `fk_Usuarios_Paises1_idx` (`id_pais`),
   CONSTRAINT `fk_Usuarios_Paises1` FOREIGN KEY (`id_pais`) REFERENCES `paises` (`id_Paises`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_Usuarios_Tipo_usuario1` FOREIGN KEY (`id_tipo_usuario`) REFERENCES `tipo_usuario` (`id_Tipo_usuario`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -450,7 +450,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'Forze-Sama','s_nhh@hotmail.com','b5p5pw11',NULL,NULL,NULL,NULL,NULL,NULL,1000,0,0,NULL,NULL,3);
+INSERT INTO `usuarios` VALUES (1,'Forze-Sama','s_nhh@hotmail.com','b5p5pw11',NULL,NULL,NULL,NULL,NULL,NULL,1000,0,0,'img-profile/profile_user.jpg',NULL,3),(2,'not-jahmilli','anthonysteiner96@gmail.com','j3j3',NULL,NULL,NULL,NULL,NULL,NULL,1000,0,0,'img-profile/profile_user.jpg',NULL,3);
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -463,4 +463,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-10-29  0:42:41
+-- Dump completed on 2015-11-05  2:29:55
