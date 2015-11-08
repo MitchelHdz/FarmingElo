@@ -10,6 +10,10 @@
    equipo= "The Royalty";
    pais = "México";
    descripcion = "1v1 cuando quieras, n00b.";
+   if(usuario==null){
+       String redirectURL = "index.html";
+        response.sendRedirect(redirectURL);
+   }
 %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -35,10 +39,39 @@
         <title>Perfil de <%=usuario%></title>
         <style>
             html { overflow-x:hidden; }
+            .profile-picture{
+            width: 20%;
+            height: 100%;
+            min-height:300px;
+            min-width: 300px;
+            display: table;
+            border-radius: 100%;
+            background: transparent;
+            background-size: 100%, 100%;
+            position: relative;
+            top: -250px;
+            margin: auto;
+            background-image: url("<%=img%>");
+            border: 5px solid #212121;
+            -webkit-transition-property: background;
+            -webkit-transition-duration: 1s;
+            z-index: 3;
+            box-shadow: none !important;
+            }
+            .profile-picture:hover{
+                background:
+                linear-gradient(
+                rgba(33, 33, 33, 0.50),
+                rgba(33, 33, 33, 0.50)
+                ),
+                transparent no-repeat;
+                background-size: 100%, 100%;
+                background-image: url("<%=img%>");
+            }
         </style>
     </head>
     <body>
-        <div class="fixed-action-btn" style="top: 100px; right: 5px;"><a class="btn-floating btn-large waves-effect waves-light red" href="#"><i class="fa fa-cog fa-3x" onmouseover="spin()" id="config"></i></a></div>
+        <div class="fixed-action-btn" style="top: 100px; right: 5px;"><a class="btn-floating btn-large waves-effect waves-light red" href="#" style="border-color: black;"><i class="fa fa-cog fa-3x" onmouseover="spin()" id="config"></i></a></div>
         <header id="header" class="header-profile parallax-window" data-parallax="scroll" data-image-src="images/image1.jpg" data-position="bottom" data-speed="0.3">
             <nav class="navbar-inverse">
                 <div class="container-fluid">
@@ -86,9 +119,13 @@
                     </div>
                 </div>
             </div>
-            <a class="btn modal-trigger jiji" href="#modalimg">
-                <img src="<%=img%>" class="img-circle profile-picture">
-            </a>
+            <div id="profile-picture" class="profile-picture">
+                <div class="profile-picture-alv">
+                    <a class="btn modal-trigger z" href="#modalimg" >
+                        <span class="change-picture" style="cursor: pointer;" id="change-picture"><i class="fa fa-pencil"></i> Cambiar Foto</span>	
+                    </a>
+                </div>
+            </div>
             <div class="profile">
                 jejeje 
             </div>
@@ -96,11 +133,11 @@
         <div style="overflow:hidden; " class="modal modal-fixed-footer" id="modalimg">
             <div style="height: 390px;" class="modal-content">
                 <h4>Selecciona una imagen...</h4>
-                    <form style="height: 300px;" action="ProfileUpload" class="dropzone" method="POST" id="simg" enctype="multipart/form-data">
-                        <div class="fallback">
-                            <input name="file" type="file"/>
-                        </div>
-                    </form>
+                <form style="height: 300px;" action="ProfileUpload" class="dropzone" method="POST" id="simg" enctype="multipart/form-data">
+                    <div class="dz-message ">
+                        <h3><b>Arrastre una imagen, o haz click :D...</b></h3>
+                    </div>
+                </form>
             </div>
             <div class="modal-footer hoverable">
                 <a style="color: black;" href="#!" class="modal-action modal-close waves-effect waves-green btn btn-flat">Cerrar</a>

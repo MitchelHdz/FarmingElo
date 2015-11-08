@@ -39,7 +39,7 @@ public class ProfileUpload extends HttpServlet {
             throws ServletException, IOException {
             String urlb = "img-profile/";
             String nada="";
-            HttpSession session = request.getSession();
+            HttpSession session = request.getSession(true);
             String nom_se = (String) request.getSession().getAttribute("Usuario");
             
         if(ServletFileUpload.isMultipartContent(request)){
@@ -75,7 +75,7 @@ public class ProfileUpload extends HttpServlet {
                 
                 String query = "update Usuarios set url_foto = '"+url+"' where id_usuario = '"+id+"';";
                 s.executeUpdate(query);
-                
+                session.setAttribute("Foto", url);
             } catch (Exception ex) {
                 response.sendRedirect("index.html");
                 session.invalidate();
