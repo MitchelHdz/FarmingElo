@@ -1,3 +1,15 @@
+// Uses AMD or browser globals to create a jQuery plugin.
+(function (factory) {
+  if (typeof define === 'function' && define.amd) {
+      // AMD. Register as an anonymous module.
+      define(['jquery'], factory);
+  } else {
+      // Browser globals
+      factory(jQuery);
+  }
+} (function (jQuery) {
+    var module = { exports: { } }; // Fake component
+
 
 /*
  *
@@ -126,29 +138,29 @@
       thumbnailWidth: 120,
       thumbnailHeight: 120,
       filesizeBase: 1000,
-      maxFiles: 1,
+      maxFiles: null,
       params: {},
       clickable: true,
       ignoreHiddenFiles: true,
-      acceptedFiles: "image/jpeg,image/png,image/gif,image/jpg",
+      acceptedFiles: null,
       acceptedMimeTypes: null,
       autoProcessQueue: true,
       autoQueue: true,
-      addRemoveLinks: true,
+      addRemoveLinks: false,
       previewsContainer: null,
       hiddenInputContainer: "body",
       capture: null,
-      dictDefaultMessage: "Arrastre una imagen o haga click... ",
-      dictFallbackMessage: "Tu navegador no soporta esta tecnología.",
-      dictFallbackText: "Usa esto para subir tu imagen.",
-      dictFileTooBig: "La imagen es muy grande ({{filesize}}MiB). Maximo soportado: {{maxFilesize}}MiB.",
-      dictInvalidFileType: "No se permiten estos archivos.",
-      dictResponseError: "Servidor no configurado.",
-      dictCancelUpload: "Descarga cancelada.",
+      dictDefaultMessage: "Drop files here to upload",
+      dictFallbackMessage: "Your browser does not support drag'n'drop file uploads.",
+      dictFallbackText: "Please use the fallback form below to upload your files like in the olden days.",
+      dictFileTooBig: "File is too big ({{filesize}}MiB). Max filesize: {{maxFilesize}}MiB.",
+      dictInvalidFileType: "You can't upload files of this type.",
+      dictResponseError: "Server responded with {{statusCode}} code.",
+      dictCancelUpload: "Cancel upload",
       dictCancelUploadConfirmation: "Are you sure you want to cancel this upload?",
-      dictRemoveFile: "Archivo removido.",
+      dictRemoveFile: "Remove file",
       dictRemoveFileConfirmation: null,
-      dictMaxFilesExceeded: "No se pueden subir más archivos.",
+      dictMaxFilesExceeded: "You can not upload any more files.",
       accept: function(file, done) {
         return done();
       },
@@ -1750,3 +1762,6 @@
   contentLoaded(window, Dropzone._autoDiscoverFunction);
 
 }).call(this);
+
+    return module.exports;
+}));

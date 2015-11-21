@@ -450,7 +450,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'Forze-Sama','s_nhh@hotmail.com','b5p5pw11',NULL,NULL,NULL,NULL,NULL,NULL,1000,0,0,'img-profile/profile_user.jpg',NULL,3),(2,'not-jahmilli','anthonysteiner96@gmail.com','j3j3',NULL,NULL,NULL,NULL,NULL,NULL,1000,0,0,'img-profile/profile_user.jpg',NULL,3);
+INSERT INTO `usuarios` VALUES (1,'Forze-Sama','s_nhh@hotmail.com','b5p5pw11',NULL,NULL,NULL,NULL,NULL,NULL,1000,0,0,'img-profile/chunda.jpg',NULL,3),(2,'not-jahmilli','anthonysteiner96@gmail.com','j3j3',NULL,NULL,NULL,NULL,NULL,NULL,1000,0,0,'img-profile/profile_user.jpg',NULL,3);
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -463,4 +463,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-11-05  2:29:55
+-- Dump completed on 2015-11-21 17:33:15

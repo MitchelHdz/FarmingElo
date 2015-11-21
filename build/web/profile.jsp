@@ -35,39 +35,31 @@
         <script src="javascripts/main.js" type="text/javascript" charset="utf-8" async defer></script>
         <script type="text/javascript" src="javascripts/css3-animate-it.js"></script>
         <script type="text/javascript" src="javascripts/dropzone.js"></script>
+        <script type="text/javascript" src="javascripts/dropzone-amd-module.js"></script>
         <script src="javascripts/parallax.js"></script>
         <title>Perfil de <%=usuario%></title>
         <style>
-            html { overflow-x:hidden; }
+            html { overflow:hidden; }
             .profile-picture{
-            width: 20%;
-            height: 100%;
             min-height:300px;
             min-width: 300px;
             display: table;
             border-radius: 100%;
-            background: transparent;
-            background-size: 100%, 100%;
+            background-image: url("<%=img%>");
+            background-size: 300px, 300px;
+            background-repeat: no-repeat;
             position: relative;
             top: -250px;
             margin: auto;
-            background-image: url("<%=img%>");
             border: 5px solid #212121;
             -webkit-transition-property: background;
             -webkit-transition-duration: 1s;
-            z-index: 3;
             box-shadow: none !important;
             }
             .profile-picture:hover{
-                background:
-                linear-gradient(
-                rgba(33, 33, 33, 0.50),
-                rgba(33, 33, 33, 0.50)
-                ),
-                transparent no-repeat;
-                background-size: 100%, 100%;
-                background-image: url("<%=img%>");
-            }
+                background: radial-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("<%=img%>");
+                background-size: 300px, 300px;
+                background-repeat: no-repeat;
         </style>
     </head>
     <body>
@@ -79,7 +71,7 @@
                         <a href="#" class="navbar-brand active">Farming ELO</a>
                         <ul class="nav navbar-nav">
                             <li>
-                            <li><a href="#"> News Feed </a></li>
+                            <li><a href="#"> ¿Qué hay de Nuevo? </a></li>
                         </ul>
                     </div>
                     <div class="pull-right">
@@ -134,9 +126,6 @@
             <div style="height: 390px;" class="modal-content">
                 <h4>Selecciona una imagen...</h4>
                 <form style="height: 300px;" action="ProfileUpload" class="dropzone" method="POST" id="simg" enctype="multipart/form-data">
-                    <div class="dz-message ">
-                        <h3><b>Arrastre una imagen, o haz click :D...</b></h3>
-                    </div>
                 </form>
             </div>
             <div class="modal-footer hoverable">
