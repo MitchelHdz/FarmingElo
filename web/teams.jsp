@@ -69,14 +69,14 @@
                     </div>
                 </div>
             </div>
-            <div class="profile-picture" id="profile-picture">
+            <div id="profile-picture" class="profile-picture">
                 <div class="profile-picture-alv">
-                    <span class="change-picture" id="change-picture"><i id="edit" class="fa fa-pencil"></i> Cambiar Foto</span>	
-                </div>    
+                    <a class="btn modal-trigger z" href="#modalimg" >
+                        <span class="change-picture" style="cursor: pointer;" id="change-picture"><i class="fa fa-pencil"></i> Cambiar Foto</span>	
+                    </a>
+                </div>
             </div>
-                    <div class="profile">
-                       jejeje 
-                    </div>
+                    
         </section>
             <main id="main">
         </main>

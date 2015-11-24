@@ -42,6 +42,15 @@ function PopupRegister(){
         $('#nav').removeClass('blur-filter');
     }
 };
+function follow(){
+    var followUser = document.getElementById('followBtn');
+    document.getElementById("followBtn").innerHTML = "<i class='fa fa-check'></i> Siguiendo";
+    console.log(followUser);
+    if(followUser)
+    {
+        
+    }
+}
 $(function() {
     $('.srch-button').click(function(){
         var $wrapper = $('.srch-wrapper'), 

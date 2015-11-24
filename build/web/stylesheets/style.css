@@ -429,12 +429,75 @@ ul{
 }
 .profile-about{
     
-    background: #BDBDBD;
+    background: #730B05;
     text-align: center;
     border-top: 5px solid #212121;
+    height: 200px;
     
 }
-
+.rows-profile{
+    background: #730B05;
+}
+.comments{
+    margin-bottom: 20px;
+    background-color: #EEEEEE;
+}
+.comment{
+    background-color: #FFFFFF;
+    width: inherit;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-bottom: solid 3px #03A9F4; 
+}
+.follow{
+    position: relative;
+    top:-50px;
+    left: 30px;
+    width: 100px;
+    padding: 5px;
+    background-color: #398439;
+    border-radius: 2px;
+    color: #EEEEEE;
+    transition:  all 1s ease-in-out;
+}
+.follow:hover{
+    background-color: #458b00;
+    cursor: pointer;
+}
+.team{
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+}
+.stats-img{
+    padding-left: 6em;
+    margin: auto;
+}
+.info-comment{
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+.info-team{
+    display: inline-block;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+}
+.user-comment{
+    padding-top: 10px;
+    padding-left: 10px;
+    text-align: left;
+    display: inline-block;
+}
+.stats-user{
+    margin-top: 10px;
+}
+.teams-user{
+    margin-bottom: 10px;
+    margin-right: 0px;
+}
 .profile-picture-alv{
     display: table-cell; 
     vertical-align: middle;
@@ -948,3 +1011,19 @@ a.waves-effect .waves-ripple {
   text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent; }
+.img-profile{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    float: top;
+}
+.img-team{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    float: top;
+    margin-left: 10px;
+}
+.team-name{
+    display: inline-block;
+}
