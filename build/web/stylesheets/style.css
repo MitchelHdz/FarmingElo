@@ -48,7 +48,10 @@ a:link, a:visited{
     border-radius: 50%;
 }
 .register{
-    margin-top: 10em;
+    margin-top: 7em;
+}
+.registerBackground{
+    background: url(../images/image4.jpg) no-repeat;
 }
 .registerBtn{
     background-color: #fff;

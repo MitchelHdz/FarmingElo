@@ -28,7 +28,35 @@
         <script src="javascripts/parallax.js"></script>
         <title>Registro</title>
     </head>
-    <body style="background-color:#730B05; ">
+    <body class="registerBackground">
+        <nav class="navbar-inverse">
+                <div class="container-fluid">
+                    <div class="pull-left">
+                        <a href="#" class="navbar-brand active">Farming ELO</a>
+                        <ul class="nav navbar-nav">
+                            <li>
+                            <li><a href="#"> ¿Qué hay de Nuevo? </a></li>
+                        </ul>
+                    </div>
+                    <div class="pull-right">
+                        <form action="#" class=" srch-form navbar-form navbar-left">
+                            <div class="srch-wrapper form-group">
+                                <input type="text" class="srch-input " placeholder="Buscar..." />
+                                <button class="srch-button" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="dropdown">
+                            <a class="dropdown-toggle" href="#" data-toggle="dropdown" ><img class="nav-profilepic img-circle" src=""/> Usuario <i class="fa fa-angle-down"></i><i class=""></i></a>
+                            <ul class="dropdown-menu dropdown-menu-right">
+                                <li><a href="profile.jsp" class="login" id="perfil"><i class="fa fa-user"></i> Mi Perfil</a></li>
+                                <li><a href="LogOut" class="login" id="logout"><i class="fa fa-sign-out"></i> Cerrar Sesión</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         <div class="container register">
         <div class="row centered-form">
         <div class="">
