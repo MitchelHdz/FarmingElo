@@ -47,6 +47,29 @@ a:link, a:visited{
     -webkit-border-radius: 50%;
     border-radius: 50%;
 }
+.register{
+    margin-top: 10em;
+}
+.registerBtn{
+    background-color: #fff;
+    color: #730B05;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    -o-transition: .2s ease-out;
+    -ms-transition: .2s ease-out;
+    transition: .2s ease-out;
+    cursor: pointer;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border: solid 2px #730B05;
+}
+.registerBtn:hover{
+   background-color: #730B05;
+   color: #EEEEEE;
+}
 .header{
     background: transparent;
     /*background-color: #B71C1C;*/
