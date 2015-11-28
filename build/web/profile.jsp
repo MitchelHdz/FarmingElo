@@ -49,7 +49,7 @@
             background-size: 300px, 300px;
             background-repeat: no-repeat;
             position: relative;
-            top: -250px;
+            top: -300px;
             margin: auto;
             border: 5px solid #212121;
             -webkit-transition-property: background;
@@ -63,7 +63,7 @@
         </style>
     </head>
     <body>
-        <%if(usuario== null){%>
+<%if(usuario== null){%>
         <header id="header" class="header-profile parallax-window" data-parallax="scroll" data-image-src="images/image1.jpg" data-position="bottom" data-speed="0.3">
             <nav class="navbar-inverse">
                 <div class="container-fluid">
@@ -93,7 +93,7 @@
                     </div>
                 </div>
             </nav>
-                           
+                
         </header><!-- /header -->
             
         <section class="profile-about">   
@@ -144,10 +144,10 @@
                     <h3 style="text-align: center;">Logro por ser chingon</h3>
                 </div>
             </div>
-            <div class="col-md-8">
-                <div class="container center comments">
+            <div class="col-md-8 container-fluid">
+                <div class="container-fluid center comments">
                      <h3>Publicaciones</h3>
-                     <div class="container comment waves-effect waves-light">
+                     <div class="container-fluid comment waves-effect waves-light">
                          <img class="img-profile img-circle" src="<%=img%>">
                          <h4 class="user-comment">@MitchelHdz 21 Octubre 2015</h4>
                          <div class="info-comment">
@@ -155,7 +155,7 @@
                              <h5 class="center"><i class="fa fa-star"></i>Favorito <i class="fa fa-share"></i>Compartir</h5>
                          </div>
                      </div>
-                        <div class="container comment waves-effect waves-light">
+                        <div class="container-fluid comment waves-effect waves-light">
                          <img class="img-profile img-circle" src="<%=img%>">
                          <h4 class="user-comment">@MitchelHdz 21 Octubre 2015</h4>
                          <div class="info-comment">
@@ -172,14 +172,14 @@
                          </div>
                      </div>
                          <h2 class="center">Cargar más...</h2>
-                         
+                             
                 </div>
             </div>
             </div>
         <main id="main">
         </main>
-        <%}else{%>
-         <div class="fixed-action-btn"><a class="btn-floating btn-large waves-effect waves-light red" href="#" style="border-color: black;"><i class="fa fa-cog fa-3x" onmouseover="spin()" id="config"></i></a></div>
+<%}else{%>
+        <div class="fixed-action-btn"><a class="btn-floating btn-large waves-effect waves-light red" href="register.jsp" style="border-color: black;"><i class="fa fa-cog fa-3x" onmouseover="spin()" id="config"></i></a></div>
         <header id="header" class="header-profile parallax-window" data-parallax="scroll" data-image-src="images/image1.jpg" data-position="bottom" data-speed="0.3">
             <nav class="navbar-inverse">
                 <div class="container-fluid">
@@ -209,7 +209,7 @@
                     </div>
                 </div>
             </nav>
-                           
+                
         </header><!-- /header -->
             
         <section class="profile-about">
@@ -241,11 +241,11 @@
                 </div>
             </div>
         </section>
-        <div class="row rows-profile">
+        <div class="container-fluid rows-profile">
             <div class="col-md-4">
-                <div class="container center teams-user" style="background-color:#EEEEEE;">
+                <div class="container center teams-user card hoverable" style="background-color:#EEEEEE;">
                     <h3>Equipos</h3>
-                    <div class="waves-effect waves-light team ">
+                    <div class="waves-effect waves-light team  ">
                          <img class="img-team img-circle" src="<%=img%>">
                          <h4 class="team-name">@<%=equipo%></h4>
                          <div class="info-team">
@@ -262,14 +262,14 @@
                          </div>
                      </div>
                 </div>
-                <div class="container center stats-user" style="background-color: white;">
+                <div class="container center stats-user card hoverable" style="background-color: white;">
                     <h3>Estadisticas</h3>
                     <img src="images/group.png" class="stats-img">
                     <h3 style="text-align: center;">Logro por ser chingon</h3>
                 </div>
             </div>
-            <div class="col-md-8">
-                <div class="container center comments">
+            <div class="container col-md-8">
+                <div class="container center comments card hoverable">
                      <h3>Publicaciones</h3>
                      <div class="comment">
                      <form action="">
@@ -302,7 +302,7 @@
                          </div>
                      </div>
                          <h2 class="center">Cargar más...</h2>
-                         
+                             
                 </div>
             </div>
             </div>
@@ -318,6 +318,6 @@
         </div>
         <main id="main">
         </main>
-        <%}%>
+<%}%>
     </body>
 </html>
