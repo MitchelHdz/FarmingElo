@@ -1,0 +1,35 @@
+ @import url('http://fonts.googleapis.com/css?family=Montserrat');
+ @import url('http://fonts.googleapis.com/css?family=Raleway');
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+.border {
+    border-radius: 10px 25px;
+    
+}
+
+.border1 {
+    
+    border-radius: 50px 5px;
+    
+
+}
+nav{
+	background-color: #d84315 !important;
+}
+.heder{
+	margin: auto;
+}
+.index-logo{
+	font-size: 7em;
+}
+.logoF{
+	margin-left: 10px;
+}

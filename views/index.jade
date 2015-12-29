@@ -1,0 +1,91 @@
+doctype html
+html
+	head
+		title iDra
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/materialize.css')
+		link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+		link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet")
+		link(rel="shortcut icon" type="image/png" href="../images/favicon.png")
+	body
+		.navbar-fixed
+			nav
+				.nav-wrapper
+					a.brand-logo.logoF(id='logo-container' href='/')
+						i.fa.fa-gamepad.fa-5x
+					ul.right.hide-on-med-and-down
+						li
+							a(href='#about') About Us
+						li
+							a(href='#Adventages') FAQ
+						li
+							a(href='/Stadistics/1')
+								i.mdi-action-input
+block head
+		.parallax-container
+			.section.no-pad-bot
+				.container.center
+					br
+					br
+					h1.header.center.grey-text.text-lighten-2.index-logo FarmingElo
+					.row.center
+						h5.header.center.col.s12-light.grey-text.text-lighten-2 If your game is not here, then is not an E-sport.
+					br
+					br
+					br
+					.row.center
+						a.btn-large.waves-effect.waves-light.deep-orange.darken-3(href='/Stadistics/1') Descúbrelo
+					br
+					br
+					br
+			.parallax
+				img.responsive-img(src='images/image1.png' alt='Background' style='display: block;')
+		.container(id='about')
+			.section
+				.row
+					h3
+						i.mdi-action-label.deep-orange-text.text-darken-3
+					h3 Acerca de la Hidroponia
+					h6 Es un conjunto de técnicas que sustituye al suelo también es denominada agricultura sin suelo. La hidroponía te permite diseñar estructuras simples y/o complejas favoreciendo las condiciones ambientales idóneas para producir cualquier planta de tipo herbáceo  aprovechando en su totalidad cualquier área (azoteas jardines, suelos infértiles, terrenos escabrosos, etc) sin importar las dimensiones como el estado físico de estas.  
+					br
+					br
+		.parallax-container.valign-wrapper
+			.section.no-pad-bot
+				.container
+					br
+					br
+					.row.center
+						h3.heder.col.s12-light.grey-text.text-lighten-2 La hidroponía permite cultivar de manera casera o de forma comercial; hortalizas, flores, hierbas medicinales, aromáticas, libres de insecticidas tóxicos, logrando mejorar nuestra salud y calidad de vida
+					br
+					br
+			.parallax
+				img.responsive-img(src='images/image2.jpg' alt='Unsplashed background img 1' style='display: block;')
+		.container(id='Adventages')
+			.section
+				.row.center
+					.col.s4
+						i.fa.fa-hourglass-half.fa-5x
+						h3 Eficiente
+						p  Para todas aquellas personas preocupadas por el medio ambiente, la hidroponía representa una alternativa más ecológica a la producción convencional, pues el aprovechamiento de los recursos se optimiza a tal punto que es posible cuantificarlos.
+					.col.s4
+						i.fa.fa-heart.fa-5x
+						h3 Saludable
+						p  Como los cultivos hidropónicos pueden utilizar menos área, son más resistentes a las plagas y usan hasta un 98% menos agua que los cultivos tradicionales.
+					.col.s4
+						i.fa.fa-money.fa-5x
+						h3 Redituable
+						p  La hidroponía representa una opción de producción en la cual se pueden obtener ganancias económicas muy altas si se sabe manejar adecuadamente el cultivo y al mismo tiempo se consigue una ventana de negocio adecuada.
+		footer.page-footer
+			.container
+				.row
+					.col.16.s12.center
+						h3.white-text iDra
+						p.white-text ¿Qué estás esperando? ¡Conoce el nuevo desarrollo de Hidroponia!
+						.row.center
+							a.btn-large2.waves-effect.waves-light.deep-orange.lighten-5(href='/Stadistics/1') Descúbrelo
+							br
+							br
+
+			script(src='https://code.jquery.com/jquery-2.1.1.min.js')
+			script(src='/javascript/materialize.js')
+			script(src='/javascript/init.js')
